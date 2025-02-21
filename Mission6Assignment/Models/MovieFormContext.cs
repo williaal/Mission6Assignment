@@ -7,7 +7,9 @@ namespace Mission6Assignment.Models
         public MovieFormContext(DbContextOptions<MovieFormContext> options) : base(options) 
         { }
 
-        public DbSet<Application> Applications { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
 
     }
 }
